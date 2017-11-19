@@ -1,7 +1,7 @@
 === Sif ===
 Contributors: adpu
 Donate link: https://www.paypal.me/jverdaguer
-Tags: WooCommerce hover image, WooCommerce Product Image Flipper, flip product image,change WooCommerce product image on mouseover
+Tags: woocommerce, ecommerce, product, images, photos, product photos
 Requires at least: 4.0
 Tested up to: 4.8.3
 Stable tag: 4.3
@@ -17,7 +17,7 @@ The image that is displayed on hover, is the first one in the order of product g
 
 == Installation ==
 
-1. Upload `amd` folder to the `/wp-content/plugins/` directory
+1. Upload `sif` folder to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
 == Screenshots ==
