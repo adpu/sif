@@ -115,12 +115,10 @@ public function sif_my_custom_styles()
 {
 	  if( is_woocommerce() ){
 	  echo "<style>
-	  ul.products li.product a.woocommerce-LoopProduct-link img{opacity:1;height:auto;-webkit-transition: opacity .2s ease-out;
-transition: opacity .5s ease;}
+	  ul.products li.product a.woocommerce-LoopProduct-link img{opacity:1;height:auto;-webkit-transition: opacity .5s ease;-o-transition: opacity .5s ease;transition: opacity .5s ease;}
 	  ul.products li.product a.woocommerce-LoopProduct-link:hover img{opacity:0;height:0}
 	  ul.products li.product a.woocommerce-LoopProduct-link img.rollover-image{opacity:0;height:0}
-	  ul.products li.product a.woocommerce-LoopProduct-link:hover img.rollover-image{opacity:1;height:auto;-webkit-transition: opacity .2s ease-out;
-transition: opacity .5s ease;}
+	  ul.products li.product a.woocommerce-LoopProduct-link:hover img.rollover-image{opacity:1;height:auto;-webkit-transition: opacity .5s ease;-o-transition: opacity .5s ease;transition: opacity .5s ease;}
 	  </style>";
 	  }
 } 

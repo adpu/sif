@@ -38,3 +38,8 @@ It is the first one in the order of product gallery.
 
 = 1.0 =
 * First stable version
+
+
+== Credits ==
+
+Vector illustration credit: Vecteezy (https://www.vecteezy.com)
