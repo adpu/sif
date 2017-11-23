@@ -1,5 +1,4 @@
 <?php
-
 /**
  * The admin-specific functionality of the plugin.
  *
@@ -9,7 +8,6 @@
  * @package    sif
  * @subpackage sif/admin
  */
-
 /**
  * The admin-specific functionality of the plugin.
  *
@@ -21,7 +19,6 @@
  * @author    Jordi Verdaguer <info@adpu.net>
  */
 class Sif_Admin {
-
 	/**
 	 * The ID of this plugin.
 	 *
@@ -30,7 +27,6 @@ class Sif_Admin {
 	 * @var      string    $plugin_name    The ID of this plugin.
 	 */
 	private $plugin_name;
-
 	/**
 	 * The version of this plugin.
 	 *
@@ -39,7 +35,6 @@ class Sif_Admin {
 	 * @var      string    $version    The current version of this plugin.
 	 */
 	private $version;
-
 	/**
 	 * Initialize the class and set its properties.
 	 *
@@ -52,16 +47,13 @@ class Sif_Admin {
 		$this->version = $version;
 		add_action( 'woocommerce_before_shop_loop_item_title', array( $this, 'sif_add_secondary_image'));
 		add_action( 'wp_head', array( $this, 'sif_my_custom_styles'));
-
 	}
-
 	/**
 	 * Register the stylesheets for the admin area.
 	 *
 	 * @since    1.0.0
 	 */
 	public function enqueue_styles() {
-
 		/**
 		 * This function is provided for demonstration purposes only.
 		 *
@@ -73,18 +65,14 @@ class Sif_Admin {
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
-
 		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/sif-admin.css', array(), $this->version, 'all' );
-
 	}
-
 	/**
 	 * Register the JavaScript for the admin area.
 	 *
 	 * @since    1.0.0
 	 */
 	public function enqueue_scripts() {
-
 		/**
 		 * This function is provided for demonstration purposes only.
 		 *
@@ -96,7 +84,6 @@ class Sif_Admin {
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
-
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/sif-admin.js', array( 'jquery' ), $this->version, false );
 	}
 /**
@@ -104,9 +91,13 @@ class Sif_Admin {
 */
 public function sif_add_secondary_image() {
     global $product;
-    $attachment_ids = $product->get_gallery_attachment_ids();
-    $image_link = wp_get_attachment_url( $attachment_ids[0] ); 
+    $attachment_urls = $product->get_gallery_image_ids();
+    if ( ! empty( $attachment_urls[0] ) ) {
+    $image_link = wp_get_attachment_url($attachment_urls[0]); 
 	echo "<img src='".$image_link."' class='rollover-image' alt='Rollover image' />";  
+	}else{
+	echo "<img src='".plugin_dir_url( __FILE__ )."/images/no-image.jpg' class='rollover-image' alt='Rollover image' />"; 
+	}
 }
 /**
 * This function adds css inline style in woocommerce pages
@@ -114,13 +105,7 @@ public function sif_add_secondary_image() {
 public function sif_my_custom_styles()
 {
 	  if( is_woocommerce() ){
-	  echo "<style>
-	  ul.products li.product a.woocommerce-LoopProduct-link img{opacity:1;height:auto;-webkit-transition: opacity .5s ease;-o-transition: opacity .5s ease;transition: opacity .5s ease;}
-	  ul.products li.product a.woocommerce-LoopProduct-link:hover img{opacity:0;height:0}
-	  ul.products li.product a.woocommerce-LoopProduct-link img.rollover-image{opacity:0;height:0}
-	  ul.products li.product a.woocommerce-LoopProduct-link:hover img.rollover-image{opacity:1;height:auto;-webkit-transition: opacity .5s ease;-o-transition: opacity .5s ease;transition: opacity .5s ease;}
-	  </style>";
-	  }
-} 
-
+	  echo '<style type="text/css">.woocommerce ul.products li.product a img{margin:0}ul.products li.product a.woocommerce-LoopProduct-link img{height:auto;object-fit: cover;}ul.products li.product a.woocommerce-LoopProduct-link:hover img{height:0}ul.products li.product a.woocommerce-LoopProduct-link img.rollover-image{height:0}ul.products li.product a.woocommerce-LoopProduct-link:hover img.rollover-image{height:auto;object-fit: cover;}</style>';
+	}
+}
 }
