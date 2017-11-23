@@ -36,7 +36,7 @@ It is the first one in the order of product gallery.
 
 Crop hover image (First one in the order of product gallery) with the same size of featured image.
 
-= On hover it shows image with grey background, what it is happens ? =
+= On hover it shows image with grey background with a ban icon, what it is happens ? =
 
 It is generic image, it happens because You don't have gallery images.
 
