@@ -9,14 +9,14 @@
  * that starts the plugin.
  *
  * @link              http://example.com
- * @since             1.0.0
+ * @since             1.02
  * @package           Sif
  *
  * @wordpress-plugin
  * Plugin Name:       Sif
  * Plugin URI:        http://example.com/plugin-name-uri/
  * Description:       Sif is a simple wordpress plugin that adds hover or flipper image in woocommerce product list, category list and related products list.
- * Version:           1.0.0
+ * Version:           1.02
  * Author:            adpu
  * Author URI:        http://adpu.net/
  * License:           GPL-2.0+
@@ -64,7 +64,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-sif.php';
  * then kicking off the plugin from this point in the file does
  * not affect the page life cycle.
  *
- * @since    1.0.0
+ * @since    1.02
  */
 function run_sif() {
 

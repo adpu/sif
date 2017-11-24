@@ -7,7 +7,7 @@
  * public-facing side of the site and the admin area.
  *
  * @link       http://www.adpu.net
- * @since      1.0.0
+ * @since    1.02
  *
  * @package    sif
  * @subpackage sif/includes
@@ -22,7 +22,7 @@
  * Also maintains the unique identifier of this plugin as well as the current
  * version of the plugin.
  *
- * @since      1.0.0
+ * @since    1.02
  * @package    sif
  * @subpackage sif/includes
  * @author     Jordi Verdaguer <info@adpu.net>
@@ -33,7 +33,7 @@ class Sif {
 	 * The loader that's responsible for maintaining and registering all hooks that power
 	 * the plugin.
 	 *
-	 * @since    1.0.0
+	 * @since    1.02
 	 * @access   protected
 	 * @var      Sif_Loader    $loader    Maintains and registers all hooks for the plugin.
 	 */
@@ -42,7 +42,7 @@ class Sif {
 	/**
 	 * The unique identifier of this plugin.
 	 *
-	 * @since    1.0.0
+	 * @since    1.02
 	 * @access   protected
 	 * @var      string    $plugin_name    The string used to uniquely identify this plugin.
 	 */
@@ -51,7 +51,7 @@ class Sif {
 	/**
 	 * The current version of the plugin.
 	 *
-	 * @since    1.0.0
+	 * @since    1.02
 	 * @access   protected
 	 * @var      string    $version    The current version of the plugin.
 	 */
@@ -64,7 +64,7 @@ class Sif {
 	 * Load the dependencies, define the locale, and set the hooks for the admin area and
 	 * the public-facing side of the site.
 	 *
-	 * @since    1.0.0
+	 * @since    1.02
 	 */
 	public function __construct() {
 
@@ -91,7 +91,7 @@ class Sif {
 	 * Create an instance of the loader which will be used to register the hooks
 	 * with WordPress.
 	 *
-	 * @since    1.0.0
+	 * @since    1.02
 	 * @access   private
 	 */
 	private function load_dependencies() {
@@ -129,7 +129,7 @@ class Sif {
 	 * Uses the Plugin_Name_i18n class in order to set the domain and to register the hook
 	 * with WordPress.
 	 *
-	 * @since    1.0.0
+	 * @since    1.02
 	 * @access   private
 	 */
 	private function set_locale() {
@@ -144,7 +144,7 @@ class Sif {
 	 * Register all of the hooks related to the admin area functionality
 	 * of the plugin.
 	 *
-	 * @since    1.0.0
+	 * @since    1.02
 	 * @access   private
 	 */
 	private function define_admin_hooks() {
@@ -160,7 +160,7 @@ class Sif {
 	 * Register all of the hooks related to the public-facing functionality
 	 * of the plugin.
 	 *
-	 * @since    1.0.0
+	 * @since    1.02
 	 * @access   private
 	 */
 	private function define_public_hooks() {
@@ -175,7 +175,7 @@ class Sif {
 	/**
 	 * Run the loader to execute all of the hooks with WordPress.
 	 *
-	 * @since    1.0.0
+	 * @since    1.02
 	 */
 	public function run() {
 		$this->loader->run();

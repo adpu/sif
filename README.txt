@@ -4,7 +4,7 @@ Donate link: https://www.paypal.me/jverdaguer
 Tags: woocommerce, ecommerce, product, images, photos, product photos
 Requires at least: 4.0
 Tested up to: 4.8.3
-Stable tag: 1.01
+Stable tag: 1.02
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,9 +32,9 @@ The image that is displayed on hover, is the first one in the order of product g
 
 It is the first one in the order of product gallery.
 
-= My hover image has different size, what can I do? =
+= My hover image content, it is not centered, what can I do? =
 
-Crop hover image (First one in the order of product gallery) with the same size of featured image.
+This happens because hover image and featured image, they have different aspect ratio. To fix it,  crop hover image (First one in the order of product gallery) with the same size of featured image.
 
 = On hover it shows image with grey background with a ban icon, what it is happens ? =
 
@@ -47,9 +47,12 @@ It is generic image, it happens because You don't have gallery images.
 = 1.0 =
 * First stable version
 
-= 1.0.1 =
+= 1.01 =
 * Fixed errors  "Notice: WC_Product::get_gallery_attachment_ids deprecated"
 * Fixed errors when a product not had gallery images attached, now it shows a hover generic image.
+
+= 1.02 =
+* Auto height on hover image 
 
 == Credits ==
 

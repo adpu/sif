@@ -6,7 +6,7 @@
  * This file is used to markup the admin-facing aspects of the plugin.
  *
  * @link       http://www.adpu.net
- * @since      1.0.0
+ * @since    1.02
  *
  * @package    sif
  * @subpackage sif/admin/partials
