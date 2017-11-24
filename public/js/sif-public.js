@@ -1,11 +1,11 @@
 (function( $ ) {
 	'use strict';
 	var heightpops = $( 'img.wp-post-image' ).outerHeight( true );
-	$( 'ul.products li.product a.woocommerce-LoopProduct-link' ).hover(
+	$( 'ul.products li.product .woocommerce-LoopProduct-link' ).hover(
 	  function() {
           $( 'ul.products li.product a.woocommerce-LoopProduct-link:hover img.rollover-image' ).css( 'height' , heightpops );
       }, function() {
-          $( 'img.rollover-image' ).css( 'height' ,'0' );
+          $( 'ul.products li.product a.woocommerce-LoopProduct-link img.rollover-image' ).css( 'height' ,'0' );
       }
 	);
 
