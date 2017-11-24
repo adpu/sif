@@ -3,9 +3,13 @@
 	var heightpops = $( 'img.wp-post-image' ).outerHeight( true );
 	$( 'ul.products li.product .woocommerce-LoopProduct-link' ).hover(
 	  function() {
-          $( 'ul.products li.product a.woocommerce-LoopProduct-link:hover img.rollover-image' ).css( 'height' , heightpops );
+		  $( 'ul.products li.product a.woocommerce-LoopProduct-link:hover img.wp-post-image' ).hide();
+          $( 'ul.products li.product a.woocommerce-LoopProduct-link:hover img.rollover-image' ).show();
+		  $( 'ul.products li.product a.woocommerce-LoopProduct-link:hover img.rollover-image' ).css( 'height' , heightpops );
       }, function() {
-          $( 'ul.products li.product a.woocommerce-LoopProduct-link img.rollover-image' ).css( 'height' ,'0' );
+		   $( 'ul.products li.product a.woocommerce-LoopProduct-link img.wp-post-image' ).show();
+          $( 'ul.products li.product a.woocommerce-LoopProduct-link img.rollover-image' ).hide();
+		  $( 'ul.products li.product a.woocommerce-LoopProduct-link img.rollover-image' ).css( 'height' ,'0' );
       }
 	);
 

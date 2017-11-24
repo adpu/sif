@@ -104,7 +104,7 @@ public function sif_add_secondary_image() {
 */
 public function sif_my_custom_styles()
 {
-	  echo '<style type="text/css">.woocommerce ul.products li.product a img{margin:0}ul.products li.product a.woocommerce-LoopProduct-link img{height:auto;object-fit: cover;}ul.products li.product a.woocommerce-LoopProduct-link:hover img{height:0}ul.products li.product a.woocommerce-LoopProduct-link img.rollover-image{height:0}ul.products li.product a.woocommerce-LoopProduct-link:hover img.rollover-image{height:auto;object-fit: cover;}</style>';
+	  echo '<style type="text/css">.woocommerce ul.products li.product a img{margin:0}ul.products li.product a.woocommerce-LoopProduct-link img{display:block;}ul.products li.product a.woocommerce-LoopProduct-link img.rollover-image{display:none;object-fit: cover;}</style>';
 
 }
 }
