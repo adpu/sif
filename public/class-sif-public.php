@@ -4,7 +4,7 @@
  * The public-facing functionality of the plugin.
  *
  * @link       http://www.adpu.net
- * @since    1.02
+ * @since    1.03
  *
  * @package    sif
  * @subpackage sif/public
@@ -25,7 +25,7 @@ class Sif_Public {
 	/**
 	 * The ID of this plugin.
 	 *
-	 * @since    1.02
+	 * @since    1.03
 	 * @access   private
 	 * @var      string    $plugin_name    The ID of this plugin.
 	 */
@@ -34,7 +34,7 @@ class Sif_Public {
 	/**
 	 * The version of this plugin.
 	 *
-	 * @since    1.02
+	 * @since    1.03
 	 * @access   private
 	 * @var      string    $version    The current version of this plugin.
 	 */
@@ -43,7 +43,7 @@ class Sif_Public {
 	/**
 	 * Initialize the class and set its properties.
 	 *
-	 * @since    1.02
+	 * @since    1.03
 	 * @param      string    $plugin_name       The name of the plugin.
 	 * @param      string    $version    The version of this plugin.
 	 */
@@ -57,7 +57,7 @@ class Sif_Public {
 	/**
 	 * Register the stylesheets for the public-facing side of the site.
 	 *
-	 * @since    1.02
+	 * @since    1.03
 	 */
 	public function enqueue_styles() {
 
@@ -80,7 +80,7 @@ class Sif_Public {
 	/**
 	 * Register the JavaScript for the public-facing side of the site.
 	 *
-	 * @since    1.02
+	 * @since    1.03
 	 */
 	public function enqueue_scripts() {
 

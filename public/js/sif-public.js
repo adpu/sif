@@ -1,5 +1,6 @@
 (function( $ ) {
 	'use strict';
+	$( window ).load(function() {
 	var heightpops = $( 'img.size-shop_catalog.wp-post-image' ).height();
 	$( 'ul.products li.product .woocommerce-LoopProduct-link' ).hover(
 	  function() {
@@ -12,6 +13,8 @@
 		  $( 'ul.products li.product a.woocommerce-LoopProduct-link img.rollover-image' ).css( 'height' ,'0' );
       }
 	);
+});
+
   /**
 	 * All of the code for your public-facing JavaScript source
 	 * should reside in this file.
