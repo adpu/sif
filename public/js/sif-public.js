@@ -2,7 +2,7 @@
 	'use strict';
 	$( window ).load(function() {
 	var heightpops = $( 'img.size-woocommerce_thumbnail' ).height();
-	$( 'ul.products li.product .woocommerce-LoopProduct-link' ).hover(
+	$( 'ul.products li.product a' ).hover(
 	  function() {
 		  $( 'ul.products li.product a img.size-woocommerce_thumbnail' ).hide();
           $( 'ul.products li.product a img.rollover-image' ).show();
