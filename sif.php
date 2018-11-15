@@ -9,14 +9,14 @@
  * that starts the plugin.
  *
  * @link              http://example.com
- * @since             1.03
+ * @since             1.04
  * @package           Sif
  *
  * @wordpress-plugin
  * Plugin Name:       Sif
  * Plugin URI:        http://example.com/plugin-name-uri/
  * Description:       Sif is a simple wordpress plugin that adds hover or flipper image in woocommerce product list, category list and related products list.
- * Version:           1.03
+ * Version:           1.04
  * Author:            adpu
  * Author URI:        http://adpu.net/
  * License:           GPL-2.0+

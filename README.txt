@@ -3,8 +3,8 @@ Contributors: adpu
 Donate link: https://www.paypal.me/jverdaguer
 Tags: woocommerce, ecommerce, product, images, photos, product photos
 Requires at least: 4.0
-Tested up to: 4.9
-Stable tag: 1.03
+Tested up to: 5.0
+Stable tag: 1.04
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -56,6 +56,9 @@ It is generic image, it happens because You don't have gallery images.
 
 = 1.03 =
 * Fixed error on hover image height value 
+
+= 1.04 =
+* Fixed error on javascript public file
 
 == Credits ==
 
